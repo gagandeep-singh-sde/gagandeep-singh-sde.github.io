@@ -61,6 +61,16 @@ $(function () {
 			});
 	});
 
+	$(".message-dialog input").focus(function () {
+		var winht = $(window).scrollTop() - 150;
+		var winwt = $(window).width();
+		if(winwt<=420){
+			$(".message-dialog").css({
+				"top": winht + "px"
+			});
+		}
+	});
+
 	$("#pop-up").click(function () {
 		$(".message-dialog").css({
 			"transform": "translateY(50px)",
