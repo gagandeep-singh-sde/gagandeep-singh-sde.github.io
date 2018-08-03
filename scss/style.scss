@@ -811,5 +811,27 @@ footer{
   text-align: center;
   padding: 30px 0px;
   border-top: 1px solid #eee;
-  background: #fff;
+}
+
+.thankyou-content{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  p{
+    font-family: 'Garamond-Bold';
+    color: #444;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+}
+.fa-smile-o{
+  display: block;
+  font-size: 260px;
+  text-align: center;
+  padding: 5px 0px 30px;
+  color: #FFC53A;
+  opacity: 0.5;
 }
