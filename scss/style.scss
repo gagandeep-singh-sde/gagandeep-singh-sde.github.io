@@ -82,6 +82,24 @@ h1{
   }
 }
 
+.h2-over{
+  letter-spacing: 1px;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 89px;
+    width: 125px;
+    height: 1px;
+    background: #EEEEEE;
+    @media only screen and (min-width : 769px) and (max-width : 1024px){
+      top: 90px;
+    }
+    @media only screen and (max-width : 365px){
+      top: 90px;
+    }
+  }
+}
+
 h2{
   position: relative;
   font-family: 'Garamond';
@@ -118,6 +136,7 @@ h2{
 .subscribe-btn{
   display: inline-block;
   text-align: center;
+  cursor: pointer;
   width: 100%;
   margin: 35px auto;
   z-index: 2;
