@@ -1,0 +1,99 @@
+/* Bootstrap theme customized with Pinegrow Web Editor */
+@font-face {
+    font-family: 'BasicSquare7Solid';
+    src: url('../../assets/fonts/BasicSquare7Solid.svg#BasicSquare7Solid') format('svg'),
+       url('../../assets/fonts/BasicSquare7Solid.ttf') format('truetype'),
+       url('../../assets/fonts/BasicSquare7Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'basic_square_7_solid';
+    src: url('../../assets/fonts/basic_square_7_solid.eot');
+    src: url('../../assets/fonts/basic_square_7_solid.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/basic_square_7_solid.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+/* Vars go before the @import */
+$brand-red: #BC2130;
+$primary: $brand-red;
+$headings-font-family: "BasicSquare7Solid";
+$navbar-light-active-color: $brand-red;
+
+/* Import the Bootstrap files */
+@import "bootstrap/bootstrap";
+
+/* Custom CSS rules come here */
+p {
+    font-family: "Montserrat";
+    line-height: 1.6;
+    letter-spacing: .8px;
+}
+
+.navbar {
+    border-top: 3px solid $brand-red;
+}
+
+.navbar-brand {
+  @media (max-width:575px) {
+    max-width: 50%;
+  }
+}
+
+.navbar-nav {
+    font-size: .9rem;
+}
+
+.nav-fixed-custom {
+    position: fixed;
+    top: -350px;
+    background: #fefefe;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+}
+
+.montserrat {
+    font-family: "Montserrat";
+}
+
+.montserrat-bold {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.rounded-lg {
+    border-radius: 1rem !important;
+}
+
+.font-size-lg {
+    font-size: 2.5rem;
+}
+
+.text-rtl {
+    direction: rtl;
+}
+
+.product-background {
+    background-image: url("../../assets/images/banner/product-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-background {
+    background-image: url("../../assets/images/banner/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list-group-item {
+  background-color: transparent !important;
+}
+
+.big-text {
+  font-size: 1.5rem;
+}

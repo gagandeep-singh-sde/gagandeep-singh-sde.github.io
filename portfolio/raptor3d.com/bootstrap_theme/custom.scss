@@ -1,0 +1,67 @@
+/* Bootstrap theme customized with Pinegrow Web Editor */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+/* Vars go before the @import */
+/* Import the Bootstrap files */
+$blue: #007bff;
+$brand-red: #b50000;
+$primary: $brand-red;
+$headings-font-family: "Montserrat";
+$navbar-light-active-color: $brand-red;
+
+@import "bootstrap/bootstrap";
+
+/* Custom CSS rules come here */
+.montserrat {
+    font-family: "Montserrat";
+}
+
+.montserrat-bold {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.montserrat-superbold {
+  font-size: 2rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+p{
+  font-family: "Open Sans";
+  line-height: 1.6;
+  letter-spacing: .8px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.hr-width-custom{
+  width: 12.5%;
+  border-width: 2px;
+}
+
+.img-sm-display{
+  display: none !important;
+  @media (max-width: 576px) {
+  display: block !important;
+  }
+}
+
+.img-lg-display{
+  display: none !important;
+  @media (min-width: 577px) {
+  display: block !important;
+  }
+}

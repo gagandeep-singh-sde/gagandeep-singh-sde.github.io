@@ -1,0 +1,415 @@
+body > * {
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul,p,h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#home-header {
+    padding: 20px 30px;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#logo > img{
+    width: 190px;
+}
+
+#home-header > ul {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#home-header > ul > li {
+    line-height: 70px;
+    vertical-align: bottom;
+    display: inline-block;
+    cursor: default;
+}
+
+#home-header > ul > li > a {
+    font-family: "CaviarDreams", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    opacity: .7;
+    transition: all .5s ease;
+}
+
+#home-header > ul > li > a:hover {
+    opacity: 1;
+}
+
+.quote {
+    position: absolute;
+    margin: auto;
+    height: 300px;
+    top: 0; 
+    left: 0; 
+    bottom: 100px; 
+    right: 0;
+    font-family: 'Open Sans';
+    font-size: 4em;
+    color: white;
+    width: 85vw;
+    text-align: justify;
+    opacity: 0;
+}
+
+.quote > span {
+    font-size: 1.8em;
+    margin-right: 25px;
+    vertical-align: 10px;;
+}
+
+.visible-quote {
+    visibility: visible;
+}
+
+@keyframes quote {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    25% {
+        opacity: 1;
+    }
+    85%{
+        opacity: 1;
+            animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.quote-animation{
+    animation-name: quote;
+    animation-duration: 8s;
+}
+
+#home-about {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45%;
+    padding: 20px 30px;
+    color: white;
+    cursor: default;
+}
+
+#home-about > h2 {
+    font-family: "CaviarDreams_Bold";
+    margin: 5px 0px;
+    font-size: 1.9em;
+    opacity: .7;
+}
+
+#home-about > p {
+    font-family: "CaviarDreams";
+    font-size: 1.1em;
+    margin: 5px 0px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 1.8px;
+    opacity: .7;
+}
+
+#home-social-buttons > ul > a {
+    font-size: 1.8em;
+    color: white;
+    opacity: .7;
+	text-decoration: none;
+    transition: all .5s ease;
+}
+
+#home-social-buttons > ul > a:hover {
+    opacity: 1;
+}
+
+#home-social-buttons > ul > a > li {
+    margin: 10px 40px 10px 0px;
+}
+
+#right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 30px;
+    width: 50%;
+    color: white;
+    text-align: right;
+	z-index: 3;
+}
+
+#home-message-icon {
+    font-size: 4.5em;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#home-mobile {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 2em;
+    margin: 10px 0px;
+}
+
+#home-mobile-m {
+	display: none;
+	font-family: "CaviarDreams";
+	font-weight: 600;
+	opacity: .7;
+    font-size: 1.8em;
+	padding: 20px 0px;
+}
+
+#home-copyright {
+    font-family: "Open Sans";
+    margin: 10px 0px;
+    opacity: .7;
+}
+
+#home-copyright-m {
+	display: none;
+    font-family: "Open Sans";
+    margin: 10px 0px;
+    opacity: .7;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/* Responsive */
+
+@media (min-width:320px) and (max-width:600px) {
+	#bg div {
+		width: 120%;
+	}
+	
+	#home-header {
+ 	   padding: 10px;
+	}
+	
+	#logo > img{
+	    width: 130px;
+	}
+	
+	div.burger {
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		top: 3px;
+		right: -10px;
+		z-index: 3;
+	}
+	
+	div.x, div.y, div.z {
+		height: 2px;
+		width: 24px;
+	}
+
+	div.y {
+		top: 10px;
+	}
+
+	div.z {
+		top: 20px;
+	}
+	
+	div.menu {
+		top: 50px;
+	}
+	
+	div.menu ul li {
+		top: 30px;
+	}
+	
+	div.menu ul li a {
+		font-size: 1em;
+	}
+	
+	div.circle {
+		top: 32.5px;
+		right: 27.5px;
+	}
+	
+	#home-header > ul {
+		display: none;
+	}
+	
+	#mobile-navigation {
+		display: block;
+	}
+	
+	.quote {
+		height: 200px;
+		bottom: 200px; 
+		font-size: 1.7em;
+		width: 88vw;
+		text-align: center;
+	}
+
+	.quote > span {
+		font-size: 1.5em;
+		margin-right: 25px;
+		vertical-align: 10px;;
+	}
+	
+	#home-about {
+		width: 75%;
+		padding: 5px 10px;
+		color: white;
+		cursor: default;
+	}
+	
+	#home-about > h2 {
+		margin: 10px 0px;
+		font-size: 1.2em;
+	}
+
+	#home-about > p {
+		font-size: .8em;
+		margin: 10px 0px;
+		font-weight: 600;
+		line-height: 15px;
+		text-align: justify;
+		letter-spacing: 1.7px;
+	}
+
+	#home-social-buttons > ul > a {
+		font-size: 1.2em;
+		color: white;
+		opacity: .7;
+		text-decoration: none;
+		transition: all .5s ease;
+	}
+
+	#home-social-buttons > ul > a:hover {
+		opacity: 1;
+	}
+
+	#home-social-buttons > ul > a > li {
+		margin: 5px 20px 5px 0px;
+	}	
+	
+	#home-mobile-m {
+		display: inline;
+		font-size: 1.2em;
+		margin: 10px 0px;
+	}
+	
+	#home-mobile {
+		display: none;
+	}
+	
+	#home-copyright {
+		display: none;
+	}
+	
+	#home-copyright-m {
+		display: inline;
+		font-size: .7em !important;
+		letter-spacing: .7px !important;
+		
+	}
+	
+	#home-social-buttons > ul {
+		margin: 10px 0px;
+	}
+	
+	#right {
+		padding: 10px;
+		width: 25%;
+	}
+
+	#home-message-icon {
+		font-size: 3em;
+		margin: 30px 0px;
+		cursor: pointer;
+	}
+}
+
+@media (min-width:601px) and (max-width:991px) {
+	
+	#home-header > ul {
+		display: none;
+	}
+	
+	#mobile-navigation {
+		display: block;
+	}
+	
+	.quote {
+		height: 350px; 
+		bottom: 300px;
+		font-size: 3.7em;
+	}
+	
+	#home-about {
+		width: 70%;
+		padding: 30px 30px;
+		color: white;
+		cursor: default;
+	}
+	
+	#home-mobile-m {
+		display: inline;
+		margin: 10px 0px;
+	}
+	
+	#home-mobile {
+		display: none;
+	}
+	
+	#home-copyright {
+		display: none;
+	}
+	
+	#home-copyright-m {
+		display: inline;
+	}
+	
+	#home-about > h2 {
+		margin: 10px 0px;
+	}
+
+	#home-about > p {
+		margin: 10px 0px;
+	}
+	
+	#home-social-buttons > ul {
+		margin: 10px 0px;
+	}
+}
+
+@media (min-width:992px) and (max-width:1099px) {
+	
+	.quote {
+		height: 280px; 
+		bottom: 180px;
+		font-size: 3.8em;
+	}
+	
+}
