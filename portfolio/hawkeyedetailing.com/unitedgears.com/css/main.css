@@ -1,0 +1,97 @@
+@import url("header.css");
+@import url("footer.css");
+
+@font-face {
+  font-family: 'DejaVuSans';
+  src: url('../fonts/DejaVuSans.woff2') format('woff2'),
+       url('../fonts/DejaVuSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DejaVuSans-Bold';
+  src: url('../fonts/DejaVuSans-Bold.eot');
+  src: url('../fonts/DejaVuSans-Bold.woff2') format('woff2'),
+       url('../fonts/DejaVuSans-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: "DejaVuSans";
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.underline{
+    padding: 10px;
+    border-bottom: 2px solid #9e0b0b;
+}
+
+textarea{
+    resize: none;
+}
+
+.top-margin{
+    margin-top: 30px;
+}
+
+.table-hover > tbody > tr > td{
+    padding: 0px;
+}
+
+.table-hover > tbody > tr > td > a{
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    transition: all .17s ease-in-out;
+}
+
+.table-hover > tbody > tr > td > a:hover{
+    color: #ffffff;
+}
+
+.grey-border{
+    border: 3px solid #dddddd;
+    border-radius: 4px;
+}
+.media-margin{
+    margin: 5px 25px 0px 0px;
+    width: 200px;
+}
+
+.map_holder {
+    height: 426px;
+}
+
+@media(max-width: 415px){
+    .carousel-caption{
+        display: none;
+    }
+    .map_holder {
+        height: 226px;
+    }
+    .media-margin{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px){
+    .col-xs-2{
+        padding: 4px;
+    }
+}
+

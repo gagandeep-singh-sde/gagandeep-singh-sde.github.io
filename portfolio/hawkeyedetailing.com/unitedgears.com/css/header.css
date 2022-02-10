@@ -1,0 +1,30 @@
+.menu-center {
+    margin-top: 25px;
+}
+
+.header-underline{
+    border-bottom: 5px solid #9e0b0b;
+    padding-bottom: 15px;
+}
+
+#brand{
+    max-height: 100px;
+}
+
+@media(max-width: 415px){
+    #brand{
+        max-height: 50px;
+    }
+    
+    .navbar-toggle{
+        margin-top: 4px;
+    }
+    
+    .nav-pills > li {
+      float: none;
+    }
+    
+    .nav-pills > li + li {
+      margin-left: 0px;
+    }
+}

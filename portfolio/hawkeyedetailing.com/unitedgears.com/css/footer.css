@@ -1,0 +1,41 @@
+.grey-footer{
+    background-color: #eeeeee;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.border-right{
+    border-right: 1px solid #dddddd;
+}
+
+.footer-text{
+    font-size: 14px;
+    line-height: 2;
+    margin: 10px;
+}
+.red-text{
+    color: #9e0b0b;
+}
+
+.right{
+    display: inline-block;
+    text-align: right;
+}
+
+.red-footer-border{
+    border-color: #9e0b0b;
+}
+
+.top-footer-margin-logo{
+    margin-top: 50px;
+}
+
+.top-footer-margin{
+    margin-top: 100px;
+}
+
+.bold{
+    font-family: DejaVuSans-Bold;
+}

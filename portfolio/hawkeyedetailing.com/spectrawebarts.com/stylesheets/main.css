@@ -1,0 +1,141 @@
+
+@font-face {
+	font-family: 'HelveticaNeue-UltraLight';
+	src: url('../fonts/HelveticaNeue-UltraLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaviarDreams';
+	src: url('../fonts/CaviarDreams.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaviarDreams_Bold';
+	src: url('../fonts/CaviarDreams_Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+#mobile-navigation {
+	display: none;
+}
+
+.message-dialog {
+	position: fixed;
+	max-width: 400px;
+	min-width: 300px;
+	right: 0;
+	left: 0;
+	top: 0px;
+	opacity: 0;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: -1;
+	-webkit-transition: all .8s ease-in-out;
+	transition: all .8	s ease-in-out;
+}
+
+.message-dialog > form {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	max-width: 400px;
+	background-color: white;
+	padding: 20px 10px;
+	border: 1px solid #eee;
+	border-radius: 7px;
+}
+
+.message-dialog > form > input {
+	outline: none;
+	width: 80%;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid #eee;
+	color: #555;
+	border-radius: 5px;
+	box-sizing: border-box;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.message-dialog > form > input:focus {
+	border: 2px solid #2BA2BA;
+}
+
+#submit-button {
+	letter-spacing: .8px;
+	font-family: "Open Sans";
+	background: linear-gradient(60deg, #00ada0 0%,#2d9bd3 100%);
+	color: white;
+	border: 2px solid transparent;
+	border-radius: 0;
+	border-image: linear-gradient(60deg, #00ada0 0%, #2d9bd3 100%);
+	border-image-slice: 1;
+	transition: all .2s ease-in-out;
+}
+
+#submit-button:hover {
+	color: #00A3B2;
+	background: white;
+}
+
+.message-dialog > form > textarea {
+	color: #555;
+	width: 80%;
+	padding: 10px;
+	resize: none;
+	margin: 20px;
+	border: 2px solid #eee;
+	outline: none;
+	height: 100px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.message-dialog > form > textarea:focus {
+	border: 2px solid #2BA2BA;
+}
+
+#close {
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	font-size: 1.2em;
+	color: #999999;
+}
+
+.coming-soon-h1{
+	font-size: 82px;
+	font-family: 'CaviarDreams_Bold';
+	color: #000;
+	opacity: .3;
+	text-align: center;
+	margin-top: 12.5%;
+}
+.coming-soon-h4{
+	font-size: 18px;
+	font-family: 'CaviarDreams_Bold';
+	opacity: .3;
+	color: #000;
+	text-align: center;
+}
